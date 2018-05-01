@@ -1,3 +1,7 @@
+html
+{
+  -webkit-tap-highlight-color:transparent;
+}
 body
 {
     
@@ -70,7 +74,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: white;
+    color:transparent;
 }
 textarea {
     width: 100%;
@@ -83,4 +87,11 @@ textarea {
     resize: none;
     margin-left:5%; 
     margin-right:5%;
+}
+a{
+     -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
 }

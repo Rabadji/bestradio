@@ -15,7 +15,9 @@ app.get('/page1',function(req,res){
 app.get('/page2',function(req,res){
   res.sendFile(path.join(__dirname+'/public/page2.html'));
 });
-
+app.get('/radio/purchase',function(req,res){
+  res.sendFile(path.join(__dirname+'/public/page1.html'));
+});
 
 app.listen(3001, function () {
   console.log('Example app listening on port 3000!');
