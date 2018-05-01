@@ -5,7 +5,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extened:true}));
 const MongoClient=require("mongodb").MongoClient;
 const ObjectID=require('mongodb').ObjectID;
+var db;
 var path    = require("path");
+
+
 app.use(express.static("radio"));
 app.get('/', function (req, res) {
   res.send('Hello World!');
