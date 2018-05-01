@@ -1,7 +1,7 @@
 body
 {
     
-    background: url('./background@3x.png') no-repeat center center fixed;
+    /*background: url('./background@3x.png') no-repeat center center fixed;*/
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -33,7 +33,7 @@ body
     margin-bottom: 15%;
 }
 #text1{
-    font-size:4vw;
+    font-size:5vw;
      text-align: center;
   color:white;
 margin-top: 10%;
@@ -43,6 +43,7 @@ margin-bottom: 10%;
 div.listelem{
      margin-left: 10%;
      margin-bottom: 12%;
+     margin-right: 10%;
   color:white;
 }
 button {
