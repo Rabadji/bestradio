@@ -23,7 +23,7 @@ app.get('/page2',function(req,res){
   res.sendFile(path.join(__dirname+'/radio/page2.html'));
 });
 
-app.get('/purchase_radio',function(req,res){
+app.get('/purchaseradio',function(req,res){
   res.sendFile(path.join(__dirname+'/radio/page1.html'));
 });
 
