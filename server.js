@@ -7,7 +7,7 @@ const MongoClient=require("mongodb").MongoClient;
 const ObjectID=require('mongodb').ObjectID;
 var db;
 var path    = require("path");
-var purchase="page1";
+var purchase;
 
 //#################change purchase
 app.post('/radio_page',function(req,res){
