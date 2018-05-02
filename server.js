@@ -9,6 +9,12 @@ var db;
 var path    = require("path");
 var purchase="page1";
 
+//#################change purchase
+app.post('/radio_page',function(req,res){
+    purchase=req.body.page;
+    res.send(purchase);
+})
+
 app.use(express.static("radio"));
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -27,11 +33,7 @@ app.get('/purchase_radio',function(req,res){
   res.sendFile(path.join(__dirname+'/radio/'+purchase+'.html'));
 });
 
-//#################change purchase
-app.post('/radio_page',function(req,res){
-    purchase=req.body.page;
-    res.send(purchase);
-})
+
 //####################################inapp####################################
 app.get('/radio_inapp',function(req,res){
     db.collection('radio_inapp').find().toArray(function(err,docs){
