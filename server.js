@@ -9,6 +9,19 @@ var db;
 var path    = require("path");
 var purchase;
 
+
+
+app.get('/terms',function(req,res){
+  res.sendFile(path.join(__dirname+'/radio/Terms.html'));
+});
+app.get('/privacy',function(req,res){
+  res.sendFile(path.join(__dirname+'/radio/Privacy.html'));
+});
+app.get('/about',function(req,res){
+  res.sendFile(path.join(__dirname+'/radio/About.html'));
+});
+
+
 //#################change purchase
 app.post('/radio_page',function(req,res){
     purchase=req.body.page;
