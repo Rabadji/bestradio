@@ -23,7 +23,7 @@ app.get('/page2',function(req,res){
   res.sendFile(path.join(__dirname+'/radio/page2.html'));
 });
 
-app.get('/purchase',function(req,res){
+app.get('/purchase_radio',function(req,res){
   res.sendFile(path.join(__dirname+'/radio/page1.html'));
 });
 
@@ -41,7 +41,7 @@ app.get('/text',function(req,res){
 })
 
 app.post('/text',function(req,res){
-        var txt={ text:req.body.text,     
+        var txt={ inapp:req.body.inapp,     
         };
     db.collection('text').insert(txt,function(err,result){
         if(err){
